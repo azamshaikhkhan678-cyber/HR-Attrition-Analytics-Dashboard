@@ -14,7 +14,8 @@ This Business Intelligence application transforms human resources data into an i
 2. **Text Normalization:** Cleaned out percent text symbols from `AbsenteeismRate` and transformed the values into true numbers.
 3. **Experience Level Groups:** Grouped granular tenure fields into standard bands (`0-2 Years`, `3-5 Years`, `6+ Years`).
 
-## 🧮 Core Business DAX Formulation Snippets
+![HR Executive Analytics Dashboard Interface](dashboard_home.png)
+
 ```dax
 Total Employees = COUNT(HR_Workforce_Data[EmployeeID])
 Attrition Count = CALCULATE(COUNT(HR_Workforce_Data[EmployeeID]), HR_Workforce_Data[AttritionStatus] = "Yes")
